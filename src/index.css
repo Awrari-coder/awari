@@ -37,18 +37,30 @@
   p {
     @apply leading-relaxed text-base md:text-lg;
   }
+
+  .bg-background {
+    @apply bg-[color:var(--background)];
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/90 to-primary/80;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .border-border {
+    @apply border-[color:var(--foreground)];
+  }
+
+  .text-foreground {
+    @apply text-[color:var(--foreground)];
+  }
 }
 
 @layer utilities {
   .bg-grid-white\/25 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.25'%3E%3Cpath d='M0 0h1v20H0z'/%3E%3Cpath d='M20 0v1H0V0z'/%3E%3C/g%3E%3C/svg%3E");
   }
-}
-
-.gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/90 to-primary/80;
-}
-
-.section-padding {
-  @apply py-16 md:py-24 lg:py-32;
 }

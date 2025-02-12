@@ -4,7 +4,7 @@ import Services from "@/components/sections/services";
 import Pricing from "@/components/sections/pricing";
 import Testimonials from "@/components/sections/testimonials";
 import FAQ from "@/components/sections/faq";
-import Contact from "@/components/sections/contact";
+// import Contact from "@/components/sections/contact";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <FAQ />
-      <Contact />
+      {/* <Contact /> */}
     </motion.div>
   );
 }
